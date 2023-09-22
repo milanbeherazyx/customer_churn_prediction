@@ -1,0 +1,16 @@
+numpy 
+pandas 
+matplotlib 
+scikit-learn 
+seaborn
+flask 
+joblib 
+dill 
+evidently
+imblearn
+ipykernel
+jinja2
+uvicorn
+xgboost
+catboost
+-e .
