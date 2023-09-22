@@ -40,6 +40,10 @@ To open the Streamlit-based web application, use the following command:
 ```bash
 streamlit run streamlit_app.py
 ```
+### Running the Streamlit Web App (Deployed)
+```bash
+https://customer-churn-prediction-milanbeherazyx.streamlit.app/
+```
 
 ### Running the Gradio App
 
