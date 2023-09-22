@@ -13,4 +13,9 @@ jinja2
 uvicorn
 xgboost
 catboost
+openpyxl
+data-drift-detector
+pandas-profiling
+streamlit
+gradio
 -e .

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            background-color: #F7F7F7;
+            background-image: url('landscape.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            color: #000;
+            margin-bottom: 40px;
+        }
+        
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        p {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .project-info {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #555;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #000;">Customer Churn Prediction</h1>
+        <form action="/predictdata" method="post">
+            <label for="Age">Age:</label>
+            <input type="number" name="Age" id="Age" required>
+
+            <label for="Gender">Gender:</label>
+            <select name="Gender" id="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="Location">Location:</label>
+            <select name="Location" id="Location" required>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="New York">New York</option>
+                <option value="Miami">Miami</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Houston">Houston</option>
+            </select>
+
+            <label for="Subscription_Length_Months">Subscription Length (Months):</label>
+            <input type="number" name="Subscription_Length_Months" id="Subscription_Length_Months" required>
+
+            <label for="Monthly_Bill">Monthly Bill Amount:</label>
+            <input type="number" name="Monthly_Bill" id="Monthly_Bill" step="0.01" required>
+
+            <label for="Total_Usage_GB">Total Usage (GB):</label>
+            <input type="number" name="Total_Usage_GB" id="Total_Usage_GB" required>
+
+            <input type="submit" value="Predict">
+        </form>
+        <p>The person is {{results}}</p>
+        <div class="project-info">
+            <p>Project by Milan Kumar Behera</p>
+            <p>Email: milanbeherazyx@gmail.com</p>
+            <p>LinkedIn: milanbeherazyx</p>
+        </div>
+    </div>
+</body>
+</html>

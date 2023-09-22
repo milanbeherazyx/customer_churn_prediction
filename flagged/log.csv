@@ -1,0 +1,2 @@
+Age,Gender,Location,Subscription Length (Months),Monthly Bill Amount,Total Usage (GB),Prediction,flag,username,timestamp
+36,Female,Miami,3,97.94,297,Churn,,,2023-09-23 02:14:22.560165

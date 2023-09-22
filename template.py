@@ -1,8 +1,7 @@
 import os
 from pathlib import Path
-import logging
+from src.churn.logger import logging
 
-logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 
 project_name = "churn"
@@ -10,11 +9,12 @@ project_name = "churn"
 list_of_files = [
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
-    f"src/{project_name}/conponents/__init__.py",
-    f"src/{project_name}/conponents/data_ingestion.py",
-    f"src/{project_name}/conponents/data_transformation.py",
-    f"src/{project_name}/conponents/model_trainer.py",
+    f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/components/data_ingestion.py",
+    f"src/{project_name}/components/data_transformation.py",
+    f"src/{project_name}/components/model_trainer.py",
     f"src/{project_name}/constants/__init__.py",
+    f"src/{project_name}/data/__init__.py",
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/pipeline/predict_pipeline.py",
     f"src/{project_name}/pipeline/train_pipeline.py",
@@ -28,6 +28,8 @@ list_of_files = [
     "templates/home.html",
     "templates/index.html",
     "app.py",
+    "streamlit_app.py",
+    "gradio_app.py"
     "main.py",
     "Dockerfile",
     "requirements.txt",
